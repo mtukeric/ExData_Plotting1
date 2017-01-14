@@ -8,6 +8,7 @@ plot2 <- function(){
   
   
   #create plot and save it into png file
+  Sys.setlocale("LC_ALL","English")
   png(filename = "plot2.png", width = 480, height = 480)
   with(plotData,plot(DateTime, Global_active_power, xlab="", ylab="Global Active Power (kilowatts)",main="", type="l"))
   #dev.copy(png,'plot1.png')

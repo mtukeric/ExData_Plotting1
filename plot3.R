@@ -6,7 +6,7 @@ plot3 <- function(){
   remove(data)
   plotData$DateTime <- strptime(paste(plotData$Date,plotData$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
   
-  
+  Sys.setlocale("LC_ALL","English")
   #create plot and save it into png file
   png(filename = "plot3.png", width = 480, height = 480)
   with(plotData,plot(DateTime, Sub_metering_1, xlab="", ylab="Energy sub metering",yaxt="n", type="l"))
