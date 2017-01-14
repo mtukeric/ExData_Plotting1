@@ -1,7 +1,7 @@
 plot3 <- function(){
   
   #load data, filter on dates and create kW column
-  data <- read.csv("household_power_consumption.txt", sep=";")
+  data <- read.csv("household_power_consumption.txt", sep=";" , na.strings = '?')
   plotData <- subset(data, Date == '1/2/2007' | Date == '2/2/2007')
   remove(data)
   plotData$DateTime <- strptime(paste(plotData$Date,plotData$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
