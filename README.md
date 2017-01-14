@@ -1,3 +1,24 @@
+﻿## Instructions
+
+Download zip with data and 4 R scripts and put them into same folder. Open R and set working folder to the one just created. Source R files
+
+'source("plot1.R")'
+'source("plot2.R")'
+'source("plot3.R")'
+'source("plot4.R")'
+
+run 4 functions from source files
+
+'plot1()'
+'plot2()'
+'plot3()'
+'plot4()'
+
+and you will get 4 png files in your working folder.
+
+Make sure that plot device is not started before running scripts. You can type in command prompt dev.off() just to be sure.
+
+
 ## Introduction
 
 This assignment uses data from
@@ -111,4 +132,3 @@ The four plots that you will need to construct are shown below.
 ### Plot 4
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
-
